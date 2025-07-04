@@ -4,13 +4,13 @@ A responsive eCommerce website built using **React** that mimics the core featur
 
 ## Features
 
-- 🛍️ Product listing with reusable components
-- 🧺 Add to Cart with dynamic cart count
-- 📦 Checkout page with subtotal calculation
-- 📱 Responsive design (mobile & desktop)
-- 🧭 React Router for navigation
-- ♻️ Context API for cart state management
-- ❌ Custom 404 - Not Found page
+-  Product listing with reusable components
+-  Add to Cart with dynamic cart count
+-  Checkout page with subtotal calculation
+-  Responsive design (mobile & desktop)
+-  React Router for navigation
+-  Context API for cart state management
+-  Custom 404 - Not Found page
 
 
 ## Tech Stack
@@ -22,24 +22,7 @@ A responsive eCommerce website built using **React** that mimics the core featur
 - **CSS3** for styling
 - **Material UI Icons**
 
-## 📁 Folder Structure
-src/
-├── assets/
-│ ├── css/
-│ └── image/
-├── components/
-│ ├── Navbar.jsx
-│ ├── Home.jsx
-│ ├── Product.jsx
-│ ├── Checkout.jsx
-│ ├── CheckoutProduct.jsx
-│ ├── Subtotal.jsx
-│ └── NotFound.jsx
-├── context/
-│ └── CartContext.jsx
-├── StateProvider.jsx
-├── App.jsx
-└── main.jsx
+
 
 🙋‍♂️ About Me
 I’m a frontend developer transitioning from a banking background, passionate about UI/UX and building real-world responsive apps with React.
