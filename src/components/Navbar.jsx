@@ -4,19 +4,23 @@ import DehazeOutlinedIcon from "@mui/icons-material/DehazeOutlined";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../StateProvider";
+import logo from "../assets/image/logo.png"; 
 
 function Navbar() {
-  const [{ basket }] = useStateValue();
+  const [{ basket }] = useStateValue(); 
 
   return (
     <div className="navbar">
       <p className="header__line"><DehazeOutlinedIcon /></p>
-       <Link to="/" className="navbar__homeLink">
-        <div className="navbar__option">
-          <span>Home</span>
-        </div>
-       </Link>
 
+      
+      <Link to="/" className="navbar__homeLink">
+        <div className="navbar__logo">
+          <img src={logo} alt="Flipkart Logo" />
+        </div>
+      </Link>
+
+      
       <div className="navbar__option"><span>Gift Cards</span></div>
       <div className="navbar__option"><span>Best Sellers</span></div>
       <div className="navbar__option"><span>Mobiles</span></div>
@@ -26,7 +30,7 @@ function Navbar() {
       <div className="navbar__option"><span>Computers</span></div>
       <div className="navbar__option"><span>Flipkart Plus</span></div>
 
-      {/* 🛒 Cart Icon */}
+      
       <Link to="/checkout" className="navbar__cartLink">
         <div className="navbar__cart">
           <ShoppingCartIcon />
