@@ -1,35 +1,45 @@
-# Flipkart Clone
+# 🛒 Flipkart Clone - eCommerce Web App
 
-A Flipkart clone built with React for learning modern web development and e-commerce functionality.
+A responsive eCommerce website built using **React** that mimics the core features of Flipkart. This project was created to showcase frontend development skills such as component-based architecture, cart functionality, routing, and responsive UI.
 
 ## Features
 
-- Product listing page
-- Add to cart
-- Remove from cart
-- Product details page (coming soon)
-- User login and signup (coming soon)
-- Checkout flow (planned)
+- 🛍️ Product listing with reusable components
+- 🧺 Add to Cart with dynamic cart count
+- 📦 Checkout page with subtotal calculation
+- 📱 Responsive design (mobile & desktop)
+- 🧭 React Router for navigation
+- ♻️ Context API for cart state management
+- ❌ Custom 404 - Not Found page
 
-## Screenshots
-
-| Home Page | Product Page |
-|-----------|---------------|
-| ![Home](https://via.placeholder.com/400x200) | ![Product](https://via.placeholder.com/400x200) |
 
 ## Tech Stack
 
-- React
-- npm
-- CSS Modules or Tailwind CSS
-- Git & GitHub
+- **React 19**
+- **React Router DOM**
+- **React Context API**
+- **Vite** for development
+- **CSS3** for styling
+- **Material UI Icons**
 
-## Installation
+## 📁 Folder Structure
+src/
+├── assets/
+│ ├── css/
+│ └── image/
+├── components/
+│ ├── Navbar.jsx
+│ ├── Home.jsx
+│ ├── Product.jsx
+│ ├── Checkout.jsx
+│ ├── CheckoutProduct.jsx
+│ ├── Subtotal.jsx
+│ └── NotFound.jsx
+├── context/
+│ └── CartContext.jsx
+├── StateProvider.jsx
+├── App.jsx
+└── main.jsx
 
-Clone this repository and run the app:
-
-```bash
-git clone https://github.com/santhoshkumarcse/flipkart-clone.git
-cd flipkart-clone
-npm install
-npm start
+🙋‍♂️ About Me
+I’m a frontend developer transitioning from a banking background, passionate about UI/UX and building real-world responsive apps with React.

@@ -1,12 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
-import { BrowserRouter } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { StateProvider } from "./StateProvider";
+import reducer, { initialState } from "./Reducer";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <StateProvider initialState={initialState} reducer={reducer}>
       <App />
-    </BrowserRouter>
+    </StateProvider>
   </React.StrictMode>
 );
